@@ -70,3 +70,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// Initialize variables for the current question and score
+let currentQuestion = 0;
+let score = 0;
+
+// Get HTML elements by ID for later use
+let questionContainer = document.getElementById("question-container");
+let optionsContainer = document.getElementById("options-container");
+let resultContainer = document.getElementById("result-container");
+let scoreElement = document.getElementById("score");
