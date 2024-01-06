@@ -26,6 +26,40 @@
             </a>
     
         </div>
+        <!-- Main container for the quiz -->
+        <div class="container">
+            <!-- Heading for the quiz -->
+            <h1>Online Quiz</h1>
+            <!-- Quiz container with question, options, answer input, and navigation buttons -->
+            <div id="quiz-container">
+                <!-- Container for displaying the current question -->
+                <div id="question-container"></div>
+                <!-- Container for displaying answer options -->
+                <div id="options-container"></div>
+                <!-- Prompt for entering an answer -->
+                <p class="answer-message">Enter Your Answer Option </p>
+                <!-- Input box for entering an answer -->
+                <input id="answer-box" type="string" />
+            </div>
+            <!-- Button for navigating to the previous question -->
+            <button onclick="previousQuestion()">Previous</button>
+            <!-- Button for submitting the answer -->
+            <button data-type="submit" class="btn btn--red">Submit Answer</button>
+            <!-- Button for navigating to the next question -->
+            <button onclick="nextQuestion()">Next</button>
+            <!-- Container for displaying the quiz result -->
+            <div id="result-container">
+                <!-- Heading for displaying the user's score -->
+                <h2>Your Score: <span id="score">0</span></h2>
+            </div>
+            <!-- Container for displaying additional score information -->
+            <div class="score-space">
+                <!-- Display the number of correct answers -->
+                <p class="scores">Correct Answers <span id="scores">0</span></p>
+                <!-- Display the number of incorrect answers -->
+                <p class="scores">Incorrect Answers <span id="incorrectScores">0</span></p>
+            </div>
+        </div>
     </header>
     <script src="assets/js/script.js"></script>
 </body>
