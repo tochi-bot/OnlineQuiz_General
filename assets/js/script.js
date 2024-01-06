@@ -131,3 +131,9 @@ function previousQuestion() {
         loadQuestion();
     }
 }
+// Function to display the quiz result
+function showResult() {
+    // Assuming you have a variable named quizContainer
+    resultContainer.style.display = "block";  // Changed quizContainer to resultContainer
+    scoreElement.textContent = score;
+}
