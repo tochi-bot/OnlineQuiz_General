@@ -122,3 +122,12 @@ function nextQuestion() {
         showResult();
     }
 }
+
+// Function to move to the previous question
+function previousQuestion() {
+    // Check if there are previous questions, then load the previous question
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+    }
+}
