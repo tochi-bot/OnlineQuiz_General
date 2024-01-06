@@ -80,3 +80,18 @@ let questionContainer = document.getElementById("question-container");
 let optionsContainer = document.getElementById("options-container");
 let resultContainer = document.getElementById("result-container");
 let scoreElement = document.getElementById("score");
+
+// Function to load the current question and its options
+function loadQuestion() {
+    let currentQuizData = quizData[currentQuestion];
+    questionContainer.textContent = currentQuizData.question;
+
+    optionsContainer.innerHTML = "";
+    // Create buttons for each option and add event listeners
+    currentQuizData.options.forEach((option, index) => {
+        let button = document.createElement("button");
+        button.textContent = option;
+        button.addEventListener("click", () => checkingAnswer(option));
+        optionsContainer.appendChild(button);
+    });
+}
