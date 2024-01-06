@@ -149,3 +149,6 @@ function incrementIncorrectAnswer() {
     let previousIncorrectScores = parseInt(document.getElementById("incorrectScores").innerText);
     document.getElementById("incorrectScores").innerText = ++previousIncorrectScores;
 }
+
+// Initial load of the first question
+loadQuestion();
