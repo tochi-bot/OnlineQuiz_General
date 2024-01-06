@@ -11,85 +11,89 @@
     <!-- Set the title of the page -->
     <title>Online Quiz</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
-            <h1 id="logo"> <img class="logo" src="assets/images/logo1.png" alt="Logo" /> <span>General Knowledge</span></h1>
+            <h1 id="logo"> <img class="logo" src="assets/images/logo1.png" alt="Logo" /> <span>General Knowledge</span>
+            </h1>
         </a>
         <a href="contact.html">
-            <h1 id="logo">contact Us</h1>
+            <h1 id="contact-logo">Contact Us</h1>
         </a>
         <div>
-    
+
             <a href="sign_up.html">
-                <h1 id="logo">Sign Up</h1>
+                <h1 id="signup-logo">Sign Up</h1>
             </a>
-    
+
         </div>
-    </header>    
-        <!-- Main container for the quiz -->
-        <div class="container">
-            <!-- Heading for the quiz -->
-            <h1>Online Quiz</h1>
-            <!-- Quiz container with question, options, answer input, and navigation buttons -->
-            <div id="quiz-container">
-                <!-- Container for displaying the current question -->
-                <div id="question-container"></div>
-                <!-- Container for displaying answer options -->
-                <div id="options-container"></div>
-                <!-- Prompt for entering an answer -->
-                <p class="answer-message">Enter Your Answer Option </p>
-                <!-- Input box for entering an answer -->
-                <input id="answer-box" type="string" />
-            </div>
-            <!-- Button for navigating to the previous question -->
-            <button onclick="previousQuestion()">Previous</button>
-            <!-- Button for submitting the answer -->
-            <button data-type="submit" class="btn btn--red">Submit Answer</button>
-            <!-- Button for navigating to the next question -->
-            <button onclick="nextQuestion()">Next</button>
-            <!-- Container for displaying the quiz result -->
-            <div id="result-container">
-                <!-- Heading for displaying the user's score -->
-                <h2>Your Score: <span id="score">0</span></h2>
-            </div>
-            <!-- Container for displaying additional score information -->
-            <div class="score-space">
-                <!-- Display the number of correct answers -->
-                <p class="scores">Correct Answers <span id="scores">0</span></p>
-                <!-- Display the number of incorrect answers -->
-                <p class="scores">Incorrect Answers <span id="incorrectScores">0</span></p>
-            </div>
+    </header>
+    <!-- Main container for the quiz -->
+    <div class="container">
+        <!-- Heading for the quiz -->
+        <h1>Online Quiz</h1>
+        <!-- Quiz container with question, options, answer input, and navigation buttons -->
+        <div id="quiz-container">
+            <!-- Container for displaying the current question -->
+            <div id="question-container"></div>
+            <!-- Container for displaying answer options -->
+            <div id="options-container"></div>
+            <!-- Prompt for entering an answer -->
+            <p class="answer-message">Enter Your Answer Option </p>
+            <!-- Input box for entering an answer -->
+            <input id="answer-box" type="string" />
         </div>
-        <footer>
-            <div class="footer-content">
-                <!--Add a social meadia links-->
-                <span>Find us on:</span>
-                <ul class="social-sites">
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                            aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
-        
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                            aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
-        
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener"
-                            aria-label="Find us on Twitter (link opens in a new tab)"> Twitter</a>
-                        <!--Add a copy right for Bestnobisworld-->
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank" rel="noopener"
-                            aria-label="Find us on Youtube (link opens in a new tab)">Youtube</a>
-                        <!--Add a copy right for Bestnobisworld-->
-                    </li>
-                </ul>
-                <p>&copy; 2024 Online Quiz. All rights reserved.</p>
-            </div>
-        </footer>
-    
+        <!-- Button for navigating to the previous question -->
+        <button onclick="previousQuestion()">Previous</button>
+        <!-- Button for submitting the answer -->
+        <button data-type="submit" class="btn btn--red">Submit Answer</button>
+        <!-- Button for navigating to the next question -->
+        <button onclick="nextQuestion()">Next</button>
+        <!-- Container for displaying the quiz result -->
+        <div id="result-container">
+            <!-- Heading for displaying the user's score -->
+            <h2>Your Score: <span id="score">0</span></h2>
+        </div>
+        <!-- Container for displaying additional score information -->
+        <div class="score-space">
+            <!-- Display the number of correct answers -->
+            <p class="scores">Correct Answers <span id="scores">0</span></p>
+            <!-- Display the number of incorrect answers -->
+            <p class="scores">Incorrect Answers <span id="incorrectScores">0</span></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <!--Add social media links-->
+            <span>Find us on:</span>
+            <ul class="social-sites">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Find us on Twitter (link opens in a new tab)"> Twitter</a>
+                    <!--Add a copyright for Bestnobisworld-->
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"
+                        aria-label="Find us on Youtube (link opens in a new tab)">Youtube</a>
+                    <!--Add a copyright for Bestnobisworld-->
+                </li>
+            </ul>
+            <p>&copy; 2024 Online Quiz. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
+
+</html>

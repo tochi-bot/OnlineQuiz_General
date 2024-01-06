@@ -95,3 +95,20 @@ function loadQuestion() {
         optionsContainer.appendChild(button);
     });
 }
+
+// Function to check the user's answer against the correct answer
+function checkingAnswer() {
+    let userAnswer = document.getElementById("answer-box").value; // Fix: Get user answer from input field
+    let currentQuizData = quizData[currentQuestion];
+    let isCorrect = userAnswer === currentQuizData.correctAnswer;
+    // Display appropriate message based on correctness
+    if (isCorrect) {
+        alert("Well done! You are Correct:)");
+        incrementingScore();
+    } else {
+        alert(`Nooo... Your Answer is ${userAnswer} and the Correct Answer was ${currentQuizData.correctAnswer}. Please try again.`);
+        incrementIncorrectAnswer();
+    }
+
+    nextQuestion();
+}
