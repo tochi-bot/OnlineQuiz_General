@@ -137,3 +137,15 @@ function showResult() {
     resultContainer.style.display = "block";  // Changed quizContainer to resultContainer
     scoreElement.textContent = score;
 }
+// Function to increment the score and update the DOM
+function incrementingScore() {
+    score++;
+    document.getElementById("scores").innerText = score;
+}
+
+// Function to increment the incorrect answer count and update the DOM
+function incrementIncorrectAnswer() {
+    // Implement incorrect answer incrementing logic here
+    let previousIncorrectScores = parseInt(document.getElementById("incorrectScores").innerText);
+    document.getElementById("incorrectScores").innerText = ++previousIncorrectScores;
+}
