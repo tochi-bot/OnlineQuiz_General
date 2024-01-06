@@ -112,3 +112,13 @@ function checkingAnswer() {
 
     nextQuestion();
 }
+// Function to move to the next question
+function nextQuestion() {
+    currentQuestion++;
+    // Check if there are more questions, else show the result
+    if (currentQuestion < quizData.length) {
+        loadQuestion();
+    } else {
+        showResult();
+    }
+}
