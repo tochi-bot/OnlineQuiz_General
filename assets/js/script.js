@@ -52,6 +52,7 @@ let quizData = [
     },
 
 ];
+
 document.addEventListener("DOMContentLoaded", function () {
     // Add event listener to handle button clicks
     let buttons = document.getElementsByTagName("button");
@@ -74,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Initialize variables for the current question and score
 let currentQuestion = 0;
 let score = 0;
+let userAnswer; // Fix: Declare userAnswer variable
 
 // Get HTML elements by ID for later use
 let questionContainer = document.getElementById("question-container");
@@ -97,8 +99,8 @@ function loadQuestion() {
 }
 
 // Function to check the user's answer against the correct answer
-function checkingAnswer() {
-    let userAnswer = document.getElementById("answer-box").value; // Fix: Get user answer from input field
+function checkingAnswer(option) {
+    userAnswer = option; // Fix: Assign option to userAnswer
     let currentQuizData = quizData[currentQuestion];
     let isCorrect = userAnswer === currentQuizData.correctAnswer;
     // Display appropriate message based on correctness
@@ -112,6 +114,7 @@ function checkingAnswer() {
 
     nextQuestion();
 }
+
 // Function to move to the next question
 function nextQuestion() {
     currentQuestion++;
