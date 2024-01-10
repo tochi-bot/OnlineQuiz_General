@@ -41,7 +41,7 @@ nav a {
     color: #333;
     gap: 10px;
     font-size: 18px;
-    /* Adjust the font size of the navigation links */
+    
 }
 
 nav a:hover {
@@ -193,7 +193,6 @@ footer {
 #final-score {
     font-weight: bold;
     color: #0066cc;
-    /* You can choose your preferred color */
     font-size: 24px;
 }
 
@@ -203,7 +202,7 @@ footer {
     font-size: 16px;
     cursor: pointer;
     background-color: #4caf50;
-    /* Green color, you can adjust as needed */
+    /* Green color*/
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -215,5 +214,5 @@ footer {
 /* Hover effect for the "Play Again" button */
 #end-message button:hover {
     background-color: #45a049;
-    /* Darker green on hover, adjust as needed */
+    /* Darker green on hover, */
 }
