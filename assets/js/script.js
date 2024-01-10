@@ -123,14 +123,7 @@ function nextQuestion() {
     }
 }
 
-// Function to move to the previous question
-function previousQuestion() {
-    // Check if there are previous questions, then load the previous question
-    if (currentQuestion > 0) {
-        currentQuestion--;
-        loadQuestion();
-    }
-}
+
 // Function to display the quiz result
 function showResult() {
     // Assuming you have a variable named quizContainer
