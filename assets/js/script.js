@@ -129,10 +129,11 @@ function nextQuestion() {
 
 // Function to display the quiz result
 function showResult() {
-    // Assuming you have a variable named quizContainer
-    resultContainer.style.display = "block";  // Changed quizContainer to resultContainer
-    scoreElement.textContent = score;
+    resultContainer.style.display = "none";
+    document.getElementById("end-message").style.display = "block";
+    document.getElementById("final-score").textContent = score;
 }
+
 // Function to increment the score and update the DOM
 function incrementingScore() {
     score++;
@@ -146,5 +147,12 @@ function incrementIncorrectAnswer() {
     document.getElementById("incorrectScores").innerText = ++previousIncorrectScores;
 }
 
-// Initial load of the first question
-loadQuestion();
+function playAgain() {
+    currentQuestion = 0;
+    score = 0;
+    userAnswer = null;
+    resultContainer.style.display = "none";
+    document.getElementById("end-message").style.display = "none";
+    loadQuestion();
+}
+

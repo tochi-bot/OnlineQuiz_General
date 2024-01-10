@@ -19,6 +19,7 @@
             </h1>
         </a>
     </header>
+    
 
     <!-- Main container for the quiz -->
     <div class="container">
@@ -45,7 +46,17 @@
             <!-- Display the number of incorrect answers -->
             <p class="scores">Incorrect Answers <span id="incorrectScores">0</span></p>
         </div>
+
+        <div id="end-message" style="display: none;">
+            <p>End of the Quiz! You scored: <span id="final-score"></span></p>
+            <button onclick="playAgain()">Play Again</button>
+        </div>
+
+
     </div>
+
+   
+
     <footer>
         <div class="footer-content">
             <!-- Add social media links -->
