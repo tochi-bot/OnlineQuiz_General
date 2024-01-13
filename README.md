@@ -2,8 +2,8 @@
 This web application is an online quiz platform that challenges users with a set of general knowledge questions. Users can test their knowledge and receive instant feedback on their answers. The quiz covers various topics, including geography, science, literature, and more.
 
 ## Screenshots:
-![iPad Mini](assets/images/localhost_5500_(iPad Mini).png)
-![Moto G4](assets/images/localhost_5500_(Moto G4).png)
+![iPad Mini]<img src="assets/images/tochi-bot.github.io_OnlineQuiz_General_(iPad Mini) (1).png">
+![Moto G4]<img src="assets/images/tochi-bot.github.io_OnlineQuiz_General_(Moto G4).png">
 
 ## Table of Contents:
 - [Screenshots:](#screenshots)
@@ -23,6 +23,7 @@ This web application is an online quiz platform that challenges users with a set
 - [Quiz Logic:](#quiz-logic)
 - [Play Again:](#play-again)
 - [Deployment:](#deployment)
+- [Lighthouse](#lighthouse)
 - [Credits:](#credits)
   - [Content and Code:](#content-and-code)
   - [Trivia Questions:](#trivia-questions)
@@ -39,7 +40,7 @@ The header section includes the title of the quiz, "General Knowledge," providin
 
 ### Main Container:
 The main container holds the online quiz, featuring:
-![Questions Area](assets/images/questionsArea.png)
+![Questions Area] <img src="assets/images/questionsArea.png"
 - Heading: "Online Quiz"
 - Quiz Container: Displaying the current question and answer options.
 - Next Button: Allows users to navigate to the next question.
@@ -47,7 +48,7 @@ The main container holds the online quiz, featuring:
 
 ### Score Information:
 Additional information is provided, showcasing:
-![Scores](assets/images/scores.png)
+![Scores]<img src="assets/images/scores.png"
 - Number of Correct Answers
 - Number of Incorrect Answers
 
@@ -92,6 +93,8 @@ A "Play Again" button is provided in the end message section. Clicking this butt
 
 ## Deployment:
 The project has been successfully deployed to GitHub Pages, providing a live and accessible version for users to interact with. The live site is now accessible at [GitHub Pages](https://github.com/tochi-bot/OnlineQuiz_General.git).
+## Lighthouse
+<img src="assets/images/lighthouse.png">
 
 ## Credits:
 ### Content and Code:
